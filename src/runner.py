@@ -32,10 +32,10 @@ runner_outputs/
 
 Usage
 -----
-    python runner.py --target data/girl_pearl.png
-    python runner.py --target data/girl_pearl.png --phases 1 2
-    python runner.py --target data/girl_pearl.png --run p1_baseline
-    python runner.py --target data/girl_pearl.png --run p1_baseline --seeds 42 43 44
+    python runner.py --target data/Girl_Pearl_Earing.png
+    python runner.py --target data/Girl_Pearl_Earing.png --phases 1 2
+    python runner.py --target data/Girl_Pearl_Earing.png --run p1_baseline
+    python runner.py --target data/Girl_Pearl_Earing.png --run p1_baseline --seeds 42 43 44
     python runner.py --list
 """
 
@@ -862,8 +862,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--target",
         type=str,
-        default="data/girl_pearl.png",
-        help="Path to the target image (default: data/girl_pearl.png).",
+        default="data/Girl_Pearl_Earing.png",
+        help="Path to the target image (default: data/Girl_Pearl_Earing.png).",
     )
     parser.add_argument(
         "--phases",

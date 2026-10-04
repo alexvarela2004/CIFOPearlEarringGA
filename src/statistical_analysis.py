@@ -36,9 +36,9 @@ Outputs (in stat_analysis_outputs/):
 
 Usage
 -----
-    python statistical_analysis.py --target data/girl_pearl.png
-    python statistical_analysis.py --target data/girl_pearl.png --n_runs 30
-    python statistical_analysis.py --target data/girl_pearl.png --n_runs 3 --fast
+    python statistical_analysis.py --target data/Girl_Pearl_Earing.png
+    python statistical_analysis.py --target data/Girl_Pearl_Earing.png --n_runs 30
+    python statistical_analysis.py --target data/Girl_Pearl_Earing.png --n_runs 3 --fast
 """
 
 from __future__ import annotations

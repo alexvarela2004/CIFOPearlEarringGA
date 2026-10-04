@@ -19,7 +19,7 @@ runner_mo.py       — runner for multi-objective experiments
 Usage
 -----
 From src/:
-    python -m mo_ga.runner_mo --target data/girl_pearl.png
+    python -m mo_ga.runner_mo --target data/Girl_Pearl_Earing.png
 
 References
 ----------

@@ -9,10 +9,10 @@ Implements additional challenge option 1: CIEDE2000 as fitness function.
 Usage
 -----
     # Run CIEDE GA only (seeds 42, 43, 44)
-    python runner_ciede.py --target ../data/girl_pearl.png
+    python runner_ciede.py --target ../data/Girl_Pearl_Earing.png
 
     # With cross-evaluation against a finished RMSE run
-    python runner_ciede.py --target ../data/girl_pearl.png \\
+    python runner_ciede.py --target ../data/Girl_Pearl_Earing.png \\
         --rmse-best ../runner_outputs/<run>/seed_42/best_final_triangles.json
 
 Output structure
@@ -59,7 +59,7 @@ from ga import GeneticAlgorithm, GAConfig, EarlyStopping, DiversityAwareEarlySto
 from ga_operators.selection import TournamentSelection
 from ga_operators.crossover import KPointCrossover
 from ga_operators.mutation import GaussianMutation, SigmaDecayScheduler
-from utils import load_target, save_render, render, triangles_to_json, triangles_from_json
+from ga_utils import load_target, save_render, render, triangles_to_json, triangles_from_json
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -256,8 +256,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--target",
         type=str,
-        default="../data/girl_pearl.png",
-        help="Path to the target image (default: ../data/girl_pearl.png).",
+        default="../data/Girl_Pearl_Earing.png",
+        help="Path to the target image (default: ../data/Girl_Pearl_Earing.png).",
     )
     parser.add_argument(
         "--rmse-best",

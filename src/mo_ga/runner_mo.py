@@ -13,14 +13,14 @@ trade-off between perceptual metrics than single-objective RMSE minimisation?
 Usage
 -----
     # Run NSGA-II (3 objectives: RMSE + CIEDE)
-    python -m mo_ga.runner_mo --target data/girl_pearl.png
+    python -m mo_ga.runner_mo --target data/Girl_Pearl_Earing.png
 
     # With cross-evaluation against a finished RMSE run
-    python -m mo_ga.runner_mo --target data/girl_pearl.png \\
+    python -m mo_ga.runner_mo --target data/Girl_Pearl_Earing.png \\
         --rmse-best runner_outputs/p5_mut_gaussian_decay/seed_42/best_final_triangles.json
 
     # Only run specific seeds
-    python -m mo_ga.runner_mo --target data/girl_pearl.png --seeds 42
+    python -m mo_ga.runner_mo --target data/Girl_Pearl_Earing.png --seeds 42
 
 Output structure
 ----------------
@@ -296,7 +296,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--target",
         type=str,
-        default="data/girl_pearl.png",
+        default="data/Girl_Pearl_Earing.png",
         help="Path to the target image.",
     )
     parser.add_argument(

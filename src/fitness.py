@@ -549,7 +549,7 @@ def build_fitness(
     Examples
     --------
     >>> from PIL import Image
-    >>> img = Image.open("data/girl_pearl.png")
+    >>> img = Image.open("data/Girl_Pearl_Earing.png")
     >>> fitness = build_fitness("rmse", img)
     >>> fitness
     RMSEFitness(target_shape=(400, 300, 3))
